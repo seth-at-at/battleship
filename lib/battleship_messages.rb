@@ -81,6 +81,10 @@ class GameMessages
   def end_turn
     "Press ENTER to end your turn."
   end
+
+  def coords_invalid
+        "Coordinates are invalid, please make sure your second coordinate is set directly next to verticically or horizontally to the first coordinate."
+  end
 end
 
 

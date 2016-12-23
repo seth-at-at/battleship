@@ -2,10 +2,12 @@ require './test/test_helper.rb'
 require './lib/battleship_messages.rb'
 
 class MessagesTest < Minitest::Test
+  def setup
+    @message = GameMessages.new
+  end
 
   def test_can_print_welcome_message
-    message = GameMessages.new
-    assert_equal "Welcome to BATTLESHIP", message.openning_message
+    assert_equal "Welcome to BATTLESHIP", @message.openning_message
   end
 
   def test_can_ask_for_play_instructions_or_quit
