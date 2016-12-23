@@ -4,8 +4,8 @@ require'./lib/board.rb'
 class BoardTest < Minitest::Test
 
   def test_board_class_exists
-    board = A.new
-    assert A.new, board.class
+    board = Board.new
+    assert Board.new, board.class
   end
 
   def test_can_print_out_board_view_empty
