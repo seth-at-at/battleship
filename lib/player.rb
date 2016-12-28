@@ -8,7 +8,7 @@ class Player
     number = user_input(1)
   end
 
-  def valid_coords(user_input(0), user_input(1))
+  def valid_coords(@user_input(0), @user_input(1))
     if coords = "#{letter}#{number}"
       coords == (letter.next || letter.previous) && (number.to_i + 1 || number.to_i - 1)
       else
@@ -31,8 +31,7 @@ class Player
       unless position = 0
         board(position - 1)
       else
-        coords_invalid
-      end
+        puts coords_invalid
     end
   end
 

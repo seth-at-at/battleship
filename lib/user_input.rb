@@ -6,6 +6,9 @@ class UserInput
     gets.chomp
   end
   def user_input
-    [user_input_1, user_input_2].split("")
+    ui = ["#{user_input_1} #{user_input_2}"].split("")
+    user_input = ui.each do |input|
+      input.split(//)
+    end
   end
 end
